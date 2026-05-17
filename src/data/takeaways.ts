@@ -1,0 +1,197 @@
+import { Card, Category } from '@/types';
+
+/**
+ * Mock takeaway data for the Settled app.
+ * Based on popular UK takeaway cuisines and delivery options.
+ */
+export const takeawaysData: Card[] = [
+  {
+    id: 'takeaway-001',
+    category: Category.TAKEAWAYS,
+    title: 'Bombay Palace',
+    description: 'Authentic Indian cuisine with a wide range of curries, biryanis, and tandoori dishes. Family-run restaurant serving the local community for over 20 years.',
+    imageUrl: '/images/takeaways/indian.jpg',
+    rating: 4.5,
+    metadata: {
+      type: 'takeaway',
+      cuisine: 'Indian',
+      priceRange: '££',
+      deliveryTime: '35-50 min',
+      dietaryOptions: ['Vegetarian', 'Vegan', 'Gluten-free options'],
+    },
+    deepLinks: {
+      justEat: 'https://www.just-eat.co.uk/restaurants-bombay-palace',
+      uberEats: 'https://www.ubereats.com/gb/store/bombay-palace',
+      deliveroo: 'https://deliveroo.co.uk/menu/bombay-palace',
+    },
+  },
+  {
+    id: 'takeaway-002',
+    category: Category.TAKEAWAYS,
+    title: 'Golden Dragon',
+    description: 'Traditional Chinese takeaway offering Cantonese favourites including crispy duck, chow mein, sweet and sour dishes, and salt and pepper specialities.',
+    imageUrl: '/images/takeaways/chinese.jpg',
+    rating: 4.3,
+    metadata: {
+      type: 'takeaway',
+      cuisine: 'Chinese',
+      priceRange: '££',
+      deliveryTime: '30-45 min',
+      dietaryOptions: ['Vegetarian options', 'Gluten-free options'],
+    },
+    deepLinks: {
+      justEat: 'https://www.just-eat.co.uk/restaurants-golden-dragon',
+      uberEats: 'https://www.ubereats.com/gb/store/golden-dragon',
+    },
+  },
+  {
+    id: 'takeaway-003',
+    category: Category.TAKEAWAYS,
+    title: 'The Chippy',
+    description: 'Classic British fish and chips. Fresh cod and haddock battered daily, hand-cut chips, mushy peas, and all the traditional accompaniments.',
+    imageUrl: '/images/takeaways/fish-and-chips.jpg',
+    rating: 4.6,
+    metadata: {
+      type: 'takeaway',
+      cuisine: 'Fish & Chips',
+      priceRange: '£',
+      deliveryTime: '20-35 min',
+      dietaryOptions: ['Gluten-free batter available'],
+    },
+    deepLinks: {
+      justEat: 'https://www.just-eat.co.uk/restaurants-the-chippy',
+    },
+  },
+  {
+    id: 'takeaway-004',
+    category: Category.TAKEAWAYS,
+    title: 'Napoli Pizza',
+    description: 'Wood-fired Neapolitan-style pizzas made with imported Italian ingredients. Sourdough bases proved for 48 hours for the perfect crust.',
+    imageUrl: '/images/takeaways/pizza.jpg',
+    rating: 4.7,
+    metadata: {
+      type: 'takeaway',
+      cuisine: 'Pizza',
+      priceRange: '££',
+      deliveryTime: '25-40 min',
+      dietaryOptions: ['Vegetarian', 'Vegan cheese available', 'Gluten-free bases'],
+    },
+    deepLinks: {
+      deliveroo: 'https://deliveroo.co.uk/menu/napoli-pizza',
+      uberEats: 'https://www.ubereats.com/gb/store/napoli-pizza',
+    },
+  },
+  {
+    id: 'takeaway-005',
+    category: Category.TAKEAWAYS,
+    title: 'Thai Orchid',
+    description: 'Authentic Thai cuisine featuring fragrant curries, stir-fries, and noodle dishes. Freshly prepared with traditional herbs and spices.',
+    imageUrl: '/images/takeaways/thai.jpg',
+    rating: 4.4,
+    metadata: {
+      type: 'takeaway',
+      cuisine: 'Thai',
+      priceRange: '££',
+      deliveryTime: '35-50 min',
+      dietaryOptions: ['Vegetarian', 'Vegan', 'Nut-free options'],
+    },
+    deepLinks: {
+      deliveroo: 'https://deliveroo.co.uk/menu/thai-orchid',
+      justEat: 'https://www.just-eat.co.uk/restaurants-thai-orchid',
+    },
+  },
+  {
+    id: 'takeaway-006',
+    category: Category.TAKEAWAYS,
+    title: 'Istanbul Kebab House',
+    description: 'Freshly grilled kebabs, shawarma wraps, and mezze platters. Generous portions with homemade sauces and freshly baked flatbreads.',
+    imageUrl: '/images/takeaways/kebab.jpg',
+    rating: 4.2,
+    metadata: {
+      type: 'takeaway',
+      cuisine: 'Turkish/Kebab',
+      priceRange: '£',
+      deliveryTime: '20-35 min',
+      dietaryOptions: ['Halal', 'Vegetarian options'],
+    },
+    deepLinks: {
+      justEat: 'https://www.just-eat.co.uk/restaurants-istanbul-kebab',
+      uberEats: 'https://www.ubereats.com/gb/store/istanbul-kebab-house',
+    },
+  },
+  {
+    id: 'takeaway-007',
+    category: Category.TAKEAWAYS,
+    title: 'Sakura Sushi',
+    description: 'Fresh sushi and Japanese cuisine including maki rolls, nigiri, ramen bowls, and bento boxes. Made to order with sustainably sourced fish.',
+    imageUrl: '/images/takeaways/sushi.jpg',
+    rating: 4.5,
+    metadata: {
+      type: 'takeaway',
+      cuisine: 'Japanese',
+      priceRange: '£££',
+      deliveryTime: '30-45 min',
+      dietaryOptions: ['Vegetarian', 'Vegan rolls available', 'Gluten-free soy sauce'],
+    },
+    deepLinks: {
+      deliveroo: 'https://deliveroo.co.uk/menu/sakura-sushi',
+      uberEats: 'https://www.ubereats.com/gb/store/sakura-sushi',
+    },
+  },
+  {
+    id: 'takeaway-008',
+    category: Category.TAKEAWAYS,
+    title: 'Burger Shack',
+    description: 'Gourmet smashed burgers with premium beef patties, loaded fries, and milkshakes. All burgers come with hand-cut chips as standard.',
+    imageUrl: '/images/takeaways/burger.jpg',
+    rating: 4.4,
+    metadata: {
+      type: 'takeaway',
+      cuisine: 'American/Burgers',
+      priceRange: '££',
+      deliveryTime: '25-40 min',
+      dietaryOptions: ['Vegetarian burger', 'Vegan burger', 'Gluten-free buns'],
+    },
+    deepLinks: {
+      deliveroo: 'https://deliveroo.co.uk/menu/burger-shack',
+      uberEats: 'https://www.ubereats.com/gb/store/burger-shack',
+    },
+  },
+  {
+    id: 'takeaway-009',
+    category: Category.TAKEAWAYS,
+    title: 'Spice of Bengal',
+    description: 'Award-winning Bangladeshi and Indian restaurant specialising in traditional balti dishes, biryanis, and chef\'s special creations.',
+    imageUrl: '/images/takeaways/balti.jpg',
+    rating: 4.6,
+    metadata: {
+      type: 'takeaway',
+      cuisine: 'Indian/Bangladeshi',
+      priceRange: '££',
+      deliveryTime: '40-55 min',
+      dietaryOptions: ['Vegetarian', 'Vegan', 'Halal', 'Nut-free options'],
+    },
+    deepLinks: {
+      justEat: 'https://www.just-eat.co.uk/restaurants-spice-of-bengal',
+    },
+  },
+  {
+    id: 'takeaway-010',
+    category: Category.TAKEAWAYS,
+    title: 'Mediterranean Grill',
+    description: 'Fresh Mediterranean cuisine including grilled halloumi, falafel wraps, hummus platters, and chargrilled meats with rice and salads.',
+    imageUrl: '/images/takeaways/mediterranean.jpg',
+    rating: 4.3,
+    metadata: {
+      type: 'takeaway',
+      cuisine: 'Mediterranean',
+      priceRange: '££',
+      deliveryTime: '30-45 min',
+      dietaryOptions: ['Vegetarian', 'Vegan', 'Gluten-free options'],
+    },
+    deepLinks: {
+      deliveroo: 'https://deliveroo.co.uk/menu/mediterranean-grill',
+      uberEats: 'https://www.ubereats.com/gb/store/mediterranean-grill',
+    },
+  },
+];

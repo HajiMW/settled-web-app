@@ -1,0 +1,11 @@
+{
+  "/page": "app/page.js",
+  "/onboarding/page": "app/onboarding/page.js",
+  "/(main)/rooms/[id]/page": "app/(main)/rooms/[id]/page.js",
+  "/(main)/rooms/create/page": "app/(main)/rooms/create/page.js",
+  "/(main)/favourites/page": "app/(main)/favourites/page.js",
+  "/(main)/history/page": "app/(main)/history/page.js",
+  "/(main)/rooms/join/page": "app/(main)/rooms/join/page.js",
+  "/(auth)/signup/page": "app/(auth)/signup/page.js",
+  "/(main)/dashboard/page": "app/(main)/dashboard/page.js"
+}
