@@ -74,7 +74,7 @@ export function findGroupMatches(
   threshold: number = 1.0 // 1.0 = unanimous, 0.5 = majority
 ): string[] {
   // Get unique card IDs that have been swiped on
-  const cardIds = [...new Set(swipeActions.map((action) => action.cardId))];
+  const cardIds = Array.from(new Set(swipeActions.map((action) => action.cardId)));
 
   // Filter to cards where the match score meets the threshold
   return cardIds.filter((cardId) => {
